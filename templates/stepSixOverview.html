@@ -1,0 +1,99 @@
+<div class="page-content text-center">
+  <div class="content-numbers">
+    <h2>In plain English, objects are the single most useful thing to master in Javascript because of how often they are used.
+      I'd like to preface this Step by saying that I'm not going to even attempt to explain the entirety of objects because, quite frankly, it would be way too long and there are some incredible articles out there that cover the two different object pattern techniques. Here is one of them from JavascriptIsSexy.com: <a href="http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/">Check it out</a>. We will cover the super basics, though.
+      The major topics we will hit on are:</h2><br>
+    <ul class="text-center">
+      <li>
+        <h3>Overivew of an object</h3>
+      </li>
+      <li>
+        <h3>Creating an object</h3>
+      </li>
+      <li>
+        <h3>Manipulating an object</h3>
+      </li>
+    </ul><br>
+
+
+    <h1>Overview of an object</h1>
+    <h2>Objects are pretty much the building blocks of an application, which sounds a little arbitrary. As you learn more and more about them, though, it will be come clearer. Objects are basically a very organize way to lable and store data so it is easily retreivable. It is made up of key/value pairs, separated by commas, and surrounded by curly brackets. Take a look at the example below:</h2>
+  </div><br>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="row code-examples">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="code-block">
+        <code>
+          var object = {<br>
+          key: value, <br>
+          key: value, <br>
+          };<br>
+          //The thing on the left is known as the "key",also known as the "property".<br>
+          //The thing to the right of the colon is known as the "value", hence the "key/value pairs" name.<br>
+        </code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="content-functions text-center">
+  <h1>Creating an object</h1>
+  <h2>Creating objects is no different on the left side than before, however, notice in the example above that instead of square brackets, objects use curly brackets to enclose the key/value pairs, which are separated by commas. Let's do an
+  example below.</h2><br>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="row code-examples">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="code-block text-left">
+            <code>
+              var exampleObject = { <br>
+                firstName: "Dave", <br>
+                lastName: "Davis", <br>
+              }; <br>
+             </code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="content-functions text-center">
+    <h1>Manipulating an object</h1>
+    <h2>You can manipulate objects in two different ways. Bracket-notation or dot-notation. Let's continue using this example, since we have it put together already.</h2><br>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="row code-examples">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="code-block text-left">
+              <code>
+                var exampleObject = { <br>
+                  firstName: "Dave", <br>
+                  lastName: "Davis", <br>
+                }; <br>
+                <br>
+                //If we want to use dot-notation to change the firstName to James, we would use: <br>
+                exampleObject['firstName'] = "James"; <br><br>
+                //If we want to do the same thing with dot-notation: <br>
+                exampleObject.firstName = "James"; <br><br>
+                //If we wanted to create a new key/value pair, we could use either notation in the same way: <br>
+                exampleObject.favoriteColor = "Green"; <br>
+                exampleObject['favoriteColor'] = "Green"; <br>
+               </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+  <h1>Conclusion</h1>
+  <h2>This barely scratches the surface of objects within Javascript, but this gives you the basic idea.</h2>
+</div><br>
+<div class="text-center">
+  <br>

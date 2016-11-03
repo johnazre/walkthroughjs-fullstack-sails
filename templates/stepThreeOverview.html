@@ -1,0 +1,140 @@
+<div class="page-content text-center">
+  <div class="content-numbers">
+    <h2>Conditionals are where you are take what you want and leave everything else behind. Sounds a little like a pirate crew pillaging
+      a town, which isn't completely wrong...but the ones you use in your code will be a little more elegant and leave more survivors. Yarr.
+      Or something like a coin sorting machine. You put a quarter in there and it knows exactly where to put it. Magic...or is it?
+      The major topics we will hit on are:</h2><br>
+    <ul class="text-center">
+      <li>
+        <h3>If/Else Statements</h3>
+      </li>
+      <li>
+        <h3>Comparison Operators</h3>
+      </li>
+      <li>
+        <h3>Truthy/Falsy</h3>
+      </li>
+    </ul><br>
+
+
+    <h1>If/Else Statements</h1>
+    <h2>If/Else statements are incredibly useful when you're looking to do something specific and nothing else. Think of when you're
+      going through the refrigerator at home for that pastrami sandwich you bought last night and aren't willing to settle for anything less.
+      Nothing else is worth eating. If you find it, you will eat it, else you will just say "whatever" and move on. That's an If/Else statement.
+      My sincerest apologies if you're reading this before lunch. Let's distract you with an example that doesn't involve food:</h2>
+  </div><br>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="row code-examples">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="code-block">
+        <code>
+          //Pseudo-code (Fake code) <br>
+          if (prefer GoogleChrome) { <br>
+            use(Chrome); <br>
+          }<br>
+          if (prefer MozillaFirefox){<br>
+            use(Firefox);<br>
+          }<br>
+          else{<br>
+            use(SomethingElse); <br>
+          }<br>
+        </code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="content-functions text-center">
+  <h1>Comparison Operators</h1>
+  <h2>There are quite a few comparison operators, but we're going to stick with the mainstream ones:</h2><br>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="row code-examples">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="code-block">
+            <code> > (Greater than), < (Less than)<br>
+               >= (Greater Than or Equal To), <= (Less Than or Equal To) <br>
+               == (Equals) === (Equal to and Same Type)<br>
+               != (Does not Equal), !== (Not equal to and/or different type)<br><br>
+             </code>
+          </div>
+          <div class="code-block text-justify">
+             <code>
+               if(2 < 3) {<br>
+                 console.log('That comparison is correct');<br>
+               }<br>
+               else{<br>
+                 console.log('That comparison is incorrect');<br>
+               }<br>
+               //Would output "That comparison is correct".<br><br>
+
+
+               if(3 < 2) {<br>
+                 console.log('That comparison is correct');<br>
+               }<br>
+               else{<br>
+                 console.log('That comparison is incorrect');<br>
+               }<br>
+               //Would output "That comparison is incorrect".<br>
+             </code>
+             <code>
+               if(2 != 3) {<br>
+                 console.log('That comparison is correct');<br>
+               }<br>
+               else{<br>
+                 console.log('That comparison is incorrect');<br>
+               }<br>
+               //Would output "That comparison is correct".<br><br>
+
+
+               if(3 !== 2) {<br>
+                 console.log('That comparison is correct');<br>
+               }<br>
+               else{<br>
+                 console.log('That comparison is incorrect');<br>
+               }<br>
+               //Would output "That comparison is correct".<br>
+             </code>
+             <code>
+               if("3" == 3) {<br>
+                 console.log('That comparison is correct');<br>
+               }<br>
+               else{<br>
+                 console.log('That comparison is incorrect');<br>
+               }<br>
+               //Would output "That comparison is correct". They are only comparing value. The string is being "coerced" into a number, so their value is the same.<br><br>
+
+
+               if(3 === "3") {<br>
+                 console.log('That comparison is correct');<br>
+               }<br>
+               else{<br>
+                 console.log('That comparison is incorrect');<br>
+               }<br>
+               //Would output "That comparison is incorrect". Because they are comparing both type and value. The string is not "coerced" into a number.<br>
+             </code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <h1>Truthy/Falsy</h1>
+  <h2>This an easy concept because everyhing is "black and white" to computers, right? WRONG. Javascript is a really cool language
+  because it can "coerce" things and because of that, there are a lot of things that you just have to know. One thing that I know
+  is that while I could attempt to explain it well enough, someone else has, so I'm going to point you to <a href="http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html">
+    A Drip of Javascript
+  </a> and have you read their fantastic explanation of Truthy vs. Falsy.</h2>
+</div><br>
+<div class="text-center">
+  <h1>Conclusion</h1>
+  <h2>
+  All things considered, conditionals are fairly straightforward, minus a few things. There's also something called a "Switch" statement that
+  is used in a slim, case-by-case basis, but I'll let you read up on that elsewhere. On to loops!
+  </h2>
