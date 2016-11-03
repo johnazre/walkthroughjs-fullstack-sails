@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class="steps-heading">Step Two: All About Functions</h1>
+      <hr>
+    </div>
+    <div class="content-container text-center">
+      <button class="btn btn-default btn-lg" ng-click='showOverview = !showOverview'> Show/Hide Overview </button>
+      <button class="btn btn-default btn-lg" ng-click='showCode = !showCode'> Show/Hide Lessons </button>
+
+      <step-two-overview ng-if="!showOverview"></step-two-overview>
+      <code-block ng-if="!showCode">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row code-examples">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="code-block">
+                <code>
+
+                    //Let's make a function called sumOfTwo that prints out the sum of two numbers. Call the parameters whatever you want, but make sure you use them in the right places. (Use the placeholders in the text boxes for guidance.) <br>
+                    //Refer to the functions in examples above for help. <br>
+                    function <input type="text" ng-model='func_ex1_name' placeholder="Function Name"> (<input type="text" ng-model="func_ex1_arg1" placeholder="First Parameter">, <input type="text" ng-model="func_ex1_arg2" placeholder="Second Parameter">) { <br><br>
+                    return <input type="text" ng-model="func_ex1_arg3" placeholder="First Parameter"> + <input type="text" ng-model="func_ex1_arg4" placeholder="Second Parameter">;  <br>
+                    } <p ng-show="correctStuff.func_ex1" style='color: green;'> Correct </p><br><br>
+
+                    //Let's create a function called helloThere and have it say hello to someone. As in the last one, follow the cues.<br>
+                    function <input type="text" ng-model='func_ex2_name' placeholder="Function Name"> (<input type="text" ng-model="func_ex2_arg1" placeholder="First Parameter">) { <br><br>
+                    return "Hello, " + <input type="text" ng-model="func_ex2_arg2" placeholder="First Parameter">;  <br>
+                    } <p ng-show="correctStuff.func_ex2" style='color: green;'> Correct </p> <br><br>
+
+                    <div class="text-center"><button class="btn btn-primary" ng-click="checkFuncAnswers()">Click to check your answers!</button></div>
+
+                </code>
+              </div>
+            </div>
+         </div>
+        </div>
+      </div>
+    </code-block>
+
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-left">
+            <button class="btn btn-default" ui-sref="step-one"> Previous </button>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn btn-default" ui-sref="step-three"> Next </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+<div class="page-content text-center">
+  <div class="content-numbers">
+    <h2>Functions, on the most basic of levels, is a set of instructions. Just like making a peanut butter and jelly sandwich.
+      The major topics we will hit on are:</h2><br>
+    <ul class="text-center">
+      <li>
+        <h3>Defining functions</h3>
+      </li>
+      <li>
+        <h3>Calling Functions</h3>
+      </li>
+    </ul><br>
+    <h1>Defining Functions:</h1>
+    <h2>Defining a function is no more complicated than it sounds. You are basically telling the browser what it is that the function
+    does, how it is going to do it, and what value to spit out, i.e. return. </h2>
+  </div><br>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="row code-examples">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="code-block">
+        <code>
+          function foo(bar, baz) { <br>
+            return bar * baz; <br>
+          }
+        </code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="content-functions text-center">
+
+  <h1>Calling functions</h1>
+  <h2>The word calling isn't too far from what it sounds like. It's like calling your friend to come over and help you do what they're really
+  good at to save you some time. Basically, if you want to "call" a function, all you have to do is write the name of the function, followed <body>
+  an open and closing parentheses with any arguments you may have.</h2><br>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="row code-examples">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="code-block">
+          <code> var x = foo(1, 2);</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <h1>So, then what happens?</h1>
+  <h2>Let's work through what's happening inside the function. Since this is a simple function that is going to
+    multiply the two arguments and return the result, this only has a few steps. Look at the function here:
+  </h2>
+</div><br>
+<div class="container"><div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="row code-examples">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="code-block">
+        <code>
+          function foo(bar, baz) { <br>
+            return bar * baz; <br>
+          } <br>
+          var x = foo(1, 2);
+        </code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div><br>
+
+<div class="text-center">
+  <h2>
+  The first thing might notice is that "bar" and "baz" were replaced with 1 and 2, respectively. Basically, you are setting the "bar" parameter
+  to 1 and the "baz" parameter to 2. So, simplifying it even further, anywhere in the function that has "bar", replace it with 1
+  and anywhere that has "baz", replace it with two. If we do that, we are basically, just multiplying 1 by 2. This brings us to
+  the idea of "return". "return" basically means that when the function is done running, the return is the value/result that you
+  wanted from the function. In this case, we wanted to know what answer of 1*2 was, which was "returned" to us and stored inside
+  of the variable "x". If we were to ask the browser what the value of "x" is, it would give us a value of 2. Obviously, this only
+  scratches the surface of the usefulness of functions, but this is a place to start. Let's have you give a couple a try!
+  </h2>
+  <h1 class="text-center">Your turn!</h1>
