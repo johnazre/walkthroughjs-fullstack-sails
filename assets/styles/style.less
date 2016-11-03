@@ -7,14 +7,22 @@ body{
 #nav-container{
   padding: 10px 10px 10px 20px;
   background: black;
+
+  ul li a{
+    color: white;
+  }
 }
 
-#nav-container ul li a{
-  color: white;
+nav.navbar {
+  margin-bottom: 0 !important;
 }
 
 #home-wrapper{
   width: 100%;
+
+  .row{
+    height: 100%
+  }
 }
 
 #home-inner{
@@ -27,7 +35,6 @@ body{
   background: linear-gradient(to right, rgba(248,246,114,1) 0%, rgba(246,243,162,1) 0%, rgba(247,238,75,1) 35%, rgba(235,224,96,1) 100%);
   /*height: 800px;*/
   padding: 20px 0 40px 0;
-  margin-bottom: 22px;
 }
 
 #home-heading{
@@ -36,9 +43,6 @@ body{
 
 }
 
-#home-wrapper > .row{
-  height: 100%
-}
 
 hr{
   border: 2px solid black;
@@ -63,17 +67,17 @@ code{
   padding: 15px 0;
 }
 
-ul > li{
+ul > li {
   list-style: none;
+
+  a > h1{
+   font-size: 55px;
+   color: black;
+ }
 }
 
 .page-content > ul > li{
   list-style: circle;
-}
-
-ul > li > a > h1{
-  font-size: 55px;
-  color: black;
 }
 
 .steps-heading{
@@ -84,7 +88,7 @@ footer{
   /*position: fixed;*/
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 45px;
   background-color: gray !important;
 }
 

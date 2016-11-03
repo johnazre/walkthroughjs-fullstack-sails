@@ -1,2 +1,20 @@
-<%- partial('navbar.ejs') %>
-<ui-view></ui-view>
+<header ng-controller="headerCtrl">
+  <%- partial('navbar.ejs') %>
+</header>
+  <div class="main-wrapper">
+    <div class="container" id='home-wrapper'>
+      <div class="row">
+        <div class="col-md-12" id='home-inner'>
+          <ui-view></ui-view>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+    </div>
+  </footer>
