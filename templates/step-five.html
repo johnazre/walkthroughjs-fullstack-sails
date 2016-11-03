@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class="steps-heading">Step Five: Arrays</h1>
+      <hr>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-default btn-lg" ng-click='showOverview = !showOverview'> Show/Hide Overview </button>
+      <button class="btn btn-default btn-lg" ng-click='showCode = !showCode'> Show/Hide Lessons </button>
+    </div>
+
+    <step-five-overview ng-if="!showOverview"></step-five-overview>
+
+    <code-block ng-if="!showCode">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row code-examples">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="code-block">
+                <code>
+                  //Create an empty array called 'emptyArray'. <br>
+                  var <input type="text" ng-model='arr_ex1_var'> = <input type="text" ng-model="arr_ex1_val">; <p ng-show="correctStuff.arr_ex1" style='color: green;'> Correct </p><br><br>
+
+                  //Let's add a few values to this array. We're going to call a function called "push". It's a built-in function in Javascript that allows you to attach new values to the end of an array. There are a lot more functions that you can use to manipulate arrays, as well. <br>
+                  <input type="text" ng-model='arr_ex2_var' placeholder="Name of the function...">.push(1, 2, 3); <p ng-show="correctStuff.arr_ex2" style='color: green;'> Correct. We just pushed the values 1, 2, and 3 into the array, in that order. </p> <br><br>
+
+                  //So, now the array looks like this: [1, 2, 3] <br>
+                  //Go ahead and log the first value in this array to the console: <br>
+                  <input type="text" ng-model='arr_ex3_var' placeholder="Name of the function...">[<input type="text" ng-model="arr_ex3_val" placeholder="Index...">]; <p ng-show="correctStuff.arr_ex3" style='color: green;'> Correct, since arrays are zero-indexed, 1 is the 0th index of the array. </p> <br><br><br>
+
+                  <button class="btn btn-primary" ng-click="checkArrayAnswers()">Click to check your answers!</button>
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </code-block>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-left">
+          <button class="btn btn-default" ui-sref="step-four"> Previous </button>
+        </div>
+        <div class="col-md-6 text-right">
+          <button class="btn btn-default" ui-sref="step-six"> Next </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

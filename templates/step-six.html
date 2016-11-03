@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class="steps-heading">Step Six: Objects</h1>
+      <hr>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-default btn-lg" ng-click='showOverview = !showOverview'> Show/Hide Overview </button>
+      <button class="btn btn-default btn-lg" ng-click='showCode = !showCode'> Show/Hide Lessons </button>
+    </div>
+
+      <step-six-overview ng-if="!showOverview"></step-six-overview>
+
+      <code-block ng-if="!showCode">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="row code-examples">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="code-block">
+                  <code>
+                    //Create an empty object called 'emptyObj'. <br>
+                    var <input type="text" ng-model='obj_ex1_var'> = <input type="text" ng-model="obj_ex1_val">; <p ng-show="correctStuff.obj_ex1" style='color: green;'> Correct </p><br><br>
+
+                    //Let's add a few key/value pairs to this object. We're going to use the bracket-notation to add the value "James" the key 'firstName' and dot-notation to add the value "Jameson" to the key "lastName". <br>
+                    <input type="text" ng-model='obj_ex2_var' placeholder="Name of the object...">['<input='text' ng-model="obj_ex2_key" placeholder="Name of the key..."/>'] = <input='text' ng-model="obj_ex2_val" placeholder="The value..."> ; <p ng-show="correctStuff.obj_ex2" style='color: green;'> Correct. </p> <br>
+                    <input type="text" ng-model='obj_ex3_var' placeholder="Name of the object...">.<input='text' ng-model="obj_ex3_key" placeholder="Name of the key..."> = <input='text' ng-model="obj_ex3_val" placeholder="The value..."> ; <p ng-show="correctStuff.obj_ex3" style='color: green;'> Correct. </p> <br><br>
+                    <button class="btn btn-primary" ng-click="checkObjAnswers()">Click to check your answers!</button>
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </code-block>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-left">
+          <button class="btn btn-default" ui-sref="step-five"> Previous </button>
+        </div>
+        <div class="col-md-6 text-right">
+          <button class="btn btn-default" ui-sref="contents"> Table of Contents </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
